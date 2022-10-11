@@ -28,14 +28,15 @@ body {
 }
 .pricing-img {
   max-width: 100%;
+  margin-bottom: 10px;
 }
 
 .pricing-header {
   color: #888787;
   font-size: 16px;
   font-weight: 600;
-  margin: 25px;
-  letter-spacing: 0.1rem;
+
+  letter-spacing: 1px;
 }
 
 .pricing-features {
@@ -50,7 +51,7 @@ body {
   font-weight: 600;
   line-height: 1.5;
   letter-spacing: 1px;
-  padding: 10px 0;
+  padding: 12px 0;
 }
 
 .pricing-features-item:last-child {
