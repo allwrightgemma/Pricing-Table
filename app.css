@@ -3,6 +3,7 @@ body {
   font-family: "Open Sans", sans-serif;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .panel {
@@ -11,20 +12,22 @@ body {
   display: flex;
   text-align: center;
   max-width: 960px;
+  width: 100%;
   border-radius: 10px;
-  margin-top: 50px;
+
   padding: 15px 25px;
   justify-content: space-evenly;
+  flex-direction: column;
 }
 
 .pricing-plan {
   color: #016ff9;
-  padding: 25px 50px;
-  border-right: 1px solid #e1f1ff;
+  padding: 15px 25px;
+  border-bottom: 1px solid #e1f1ff;
 }
 
 .princing-plan:last-child {
-  border-right: none;
+  border-bottom: none;
 }
 .pricing-img {
   max-width: 100%;
@@ -88,4 +91,20 @@ body {
 
 .is-featured:hover {
   background-color: #4699ff;
+}
+
+@media (min-width: 760px) {
+  .panel {
+    flex-direction: row;
+    margin-top: 1em;
+  }
+  .pricing-plan {
+    border-bottom: none;
+    border-right: 1px solid #e1f1ff;
+    padding: 25px 50px;
+  }
+
+  .pricing-plan:last-child {
+    border-right: none;
+  }
 }
